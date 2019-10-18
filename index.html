@@ -14,6 +14,7 @@
     <title>NickSocha.com</title>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/595c537952.js" crossorigin="anonymous"></script>
     <!-- todoGoogle Analytics -->
 
@@ -23,27 +24,91 @@
 <body>
     <!-- Header -->
     <header>
-        <div>
-            <a href="https://nicksocha.com/" target="_blank" rel="noreferrer">
-                <img id="header-logo" src="images/favicon.png" alt="NS" />
-            </a>
-        </div>
-        <div class="header-right">
-            <p>About</p>
-            <p>Projects</p>
-        </div>
+        <a href="https://nicksocha.com/" target="_blank" rel="noreferrer">
+            <img id="header-logo" src="images/favicon.png" alt="NS Logo" />
+        </a>
+        <nav class="header-nav">
+            <ul id="nav-list">
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <div class="hello">
-            <h1>Hello, I'm Nick!</h1>
-            <h2><span class="txt-rotate"></span></h2>
-        </div>
-        <div class="top-links">
-            <div class="email">
-                <a href="http://contact.nicksocha.com/"></a>
+        <!-- Home -->
+        <section class="home">
+            <div class="home-hello">
+                <h1>Hello, I'm Nick!</h1>
+                <h2><span class="txt-rotate"></span></h2>
             </div>
-        </div>
+            <div class="home-social-links">
+                <a href="http://contact.nicksocha.com" target="_blank" rel="noreferrer"><i
+                        class="fas fa-envelope fa-3x"></i></a>
+                <a href="http://github.nicksocha.com" target="_blank" rel="noreferrer"><i
+                        class="fab fa-github fa-3x"></i></a>
+                <a href="http://twitter.nicksocha.com" target="_blank" rel="noreferrer"><i
+                        class="fab fa-twitter fa-3x"></i></a>
+                <a href="http://linkedin.nicksocha.com" target="_blank" rel="noreferrer"><i
+                        class="fab fa-linkedin-in fa-3x"></i></a>
+            </div>
+        </section>
+        <!-- About -->
+        <section class="about">
+            <div class="about-me">
+                <div class="about-me-text">
+                    <h3>About me</h3>
+                    <p>Hello 👋 I’m Nick,</p>
+                    <p>I currently live in the US - Milwaukee, WI 🇺🇸</p>
+                    <p>By day ☀️ I currently work in IT as a desktop support technician. I really love anything to do
+                        with
+                        technology.</p>
+                    <p>By night 🌙 I am a self taught front-end web developer who is working on transitioning to
+                        freelancing
+                        fulltime either writing code or building WordPress websites.</p>
+                    <p>In the past, I have worked Warehouse jobs, but grew tired of all the sweat for little pay.
+                        Roughly
+                        five years ago I started working in IT and love it. I love anything to do with technology. I
+                        currently work as a desktop support technician for one of the US’s largest healthcare
+                        organizations.
+                        In my free time over the past year or two I have been learning some programming. Mostly
+                        front-end
+                        web, etc… I also have a little bit of a tinfoil hat and like to keep up with security related
+                        topics
+                        in the technology industry. Over the past few months I’ve been working on gearing up to start
+                        doing
+                        some freelance web dev related projects over at nicksocha.dev.</p>
+                    <p>A few fun facts about me:</p>
+                    <ul>
+                        <li>I have no siblings, I am an only child.</li>
+                        <li>I'm afraid of… Centipedes.</li>
+                        <li>My dream job is… being an entrepreneur working remotely to provide for my family and I.
+                        </li>
+                        <li>My guilty pleasure is… deep fried cheese curds.</li>
+                    </ul>
+                    <p>Thanks for visiting Nick Socha dot com. Feel free to contact me via the envelope above, or head
+                        over
+                        to nicksocha.dev if you’re looking for more info on my web dev services.</p>
+                </div>
+                <div class="about-me-pic">
+                    <img id="about-me-pic" src="images\nick-socha-512x512.png" alt="Nick Socha">
+                </div>
+            </div>
+        </section>
+        <!-- todoProjects -->
+        <section class="projects">
+            <div>
+                <h3>Projects</h3>
+            </div>
+        </section>
     </main>
+    <!-- todoFooter -->
+    <footer>
+        Nick Socha dot com #2019
+    </footer>
 </body>
 
 <script src="js/app.js"></script>

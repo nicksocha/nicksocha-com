@@ -1,44 +1,42 @@
-* {
+/* * {
   border: 1px solid gray;
-}
+} */
 
 body {
   background: var(--blue);
   color: var(--white);
-  display: grid;
   height: 100%;
-  margin: 0;
+  margin: 0 2vw;
   padding: 0;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 4rem;
   text-shadow: 0px 3px 6px var(--yellow);
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 100;
 }
 
+h3 {
+  font-size: 1.6rem;
+  padding-bottom: 30px;
+}
+
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: "Orbitron", sans-serif;
 }
 
+a,
+h3,
+h4,
+h5,
+h6,
 p {
   font-family: "Ubuntu Condensed", sans-serif;
-}
-
-header {
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 8fr 1fr 1fr;
-  margin-bottom: 50px;
 }
 
 html {
@@ -48,30 +46,112 @@ html {
   --yellow: #ffc600;
 }
 
-.hello {
+.about {
+  padding: 8px 6vw;
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+}
+
+.about-me-text {
+  font-size: 1.2rem;
+}
+
+.about-me-pic {
+  align-items: center;
+  display: grid;
+  justify-content: center;
+}
+
+.home {
+  margin-bottom: 25vw;
+}
+
+.home-hello {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
   display: grid;
   justify-items: center;
-  margin: auto;
+  margin-bottom: 65px;
+  text-align: center;
+  user-select: none;
+}
+
+header {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  grid-template-columns: 67px 1fr;
+}
+
+.header-nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  justify-content: end;
+  justify-items: center;
+  list-style: none;
+  margin: 0;
+  padding 0;
+}
+
+.header-nav a {
+  display: block;
+  font-size: 1.4rem;
+  padding: 5px;
   text-align: center;
 }
 
-.header-right {
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+.home-social-links {
+  align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 75px);
+  justify-content: center;
   text-align: center;
-  align-content: center;
+}
+
+a {
+  color: var(--white);
+  transition: 0.5s;
+}
+
+a:active,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--yellow);
+  transition: 0.4s;
 }
 
 /* startCursor */
 .txt-rotate > .wrap {
   animation: caret 800ms steps(1) infinite;
-  border-right: 0.09em solid var(--white);
+  border-right: 0.09rem solid var(--white);
   padding-right: 2px;
 }
 /* endCursor */
 
+#about-me-pic {
+  border-radius: 10px;
+  max-width: 300px;
+}
+
 #header-logo {
-  width: 4em;
+  width: 4rem;
 }
 
 @keyframes caret {
