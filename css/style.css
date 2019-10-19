@@ -47,12 +47,13 @@ html {
 }
 
 .about {
-  padding: 8px 6vw;
+  margin: 8px 6vw;
 }
 
 .about-me {
   display: grid;
   grid-template-columns: 1fr 350px;
+  grid-gap: 5rem;
 }
 
 .about-me-text {
@@ -116,7 +117,7 @@ header {
   align-items: center;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(4, 75px);
+  grid-template-columns: repeat(auto-fit, 78px);
   justify-content: center;
   text-align: center;
 }
@@ -147,7 +148,8 @@ a:hover {
 
 #about-me-pic {
   border-radius: 10px;
-  max-width: 300px;
+  width: 75vw;
+  max-width: 19rem;
 }
 
 #header-logo {
@@ -160,3 +162,13 @@ a:hover {
   }
 }
 /* endCursor */
+
+@media (max-width: 1000px) {
+  .about-me {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+  .about {
+    margin: 8px 0;
+  }
+}
