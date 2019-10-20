@@ -2,12 +2,14 @@
   border: 1px solid gray;
 } */
 
+
 body {
   background: var(--blue);
   color: var(--white);
-  height: 100%;
+  /* min-height: 100%; */
   margin: 0 2vw;
   padding: 0;
+  cursor: default;
 }
 
 h1 {
@@ -23,6 +25,22 @@ h2 {
 h3 {
   font-size: 1.6rem;
   padding-bottom: 30px;
+}
+
+h4 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: var(--black);
+}
+
+h5 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1.1rem;
 }
 
 h1,
@@ -46,8 +64,20 @@ html {
   --yellow: #ffc600;
 }
 
+footer {
+  color: white;
+  display: grid;
+  left: 0;
+  padding: 0.7rem;
+  place-items: center center;
+  position: absolute;
+  right: 0;
+  margin-top: 6vw;
+}
+
 .about {
   margin: 8px 6vw;
+  margin-bottom: 25vw;
 }
 
 .about-me {
@@ -64,6 +94,10 @@ html {
   align-items: center;
   display: grid;
   justify-content: center;
+}
+
+.emoji {
+  font-family: android emoji, apple color emoji, emojione mozilla, emojisymbols, noto color emoji, segoe ui emoji, segoe ui symbol, twemoji mozilla;
 }
 
 .home {
@@ -121,6 +155,82 @@ header {
   justify-content: center;
   text-align: center;
 }
+
+/* !Look START */
+.projects {
+  margin: 8px 6vw;
+  margin-bottom: 6vw;
+}
+
+
+.project-box {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  background: var(--white);
+  color: var(--black);
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 150px 1fr;
+  /* height: 100%; */
+  min-height: 200px;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+}
+.project-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.project-data {
+  padding: 0.3rem;
+}
+
+.project-label {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 100%;
+}
+
+.project-links {
+  padding: 0.4rem;
+}
+
+.project-links a {
+  color: var(--black);
+}
+
+.project-thumbnail {
+  margin: auto;
+  max-height: 125px;
+  max-width: 125px;
+  padding: 0.7rem;
+}
+
+.project-type {
+  padding: 0.2rem;
+  background: var(--yellow);
+  color: var(--white);
+  width: 3.1rem;
+  height: 1.6rem;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path */
+  clip-path: polygon(0% 0%, 43px 0%, 100% 100%, 0% 100%);
+  border-radius: 0 10px;
+}
+
+
+.project-year {
+  background: var(--yellow);
+  width: 3.1rem;
+  text-align: right;
+  height: 1.6rem;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12px 100%);
+  padding: 0.2rem;
+}
+/* !Look END */
 
 a {
   color: var(--white);
