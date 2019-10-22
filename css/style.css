@@ -2,14 +2,39 @@
   border: 1px solid gray;
 } */
 
+a {
+  color: inherit;
+  transition: 0.5s;
+}
+
+a:active,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--yellow);
+  transition: 0.4s;
+}
 
 body {
   background: var(--blue);
   color: var(--white);
-  /* min-height: 100%; */
+  cursor: default;
   margin: 0 2vw;
   padding: 0;
-  cursor: default;
+}
+
+footer {
+  color: white;
+  display: grid;
+  left: 0;
+  margin-top: 6vw;
+  padding: 0.7rem;
+  place-items: center center;
+  position: absolute;
+  right: 0;
 }
 
 h1 {
@@ -17,9 +42,19 @@ h1 {
   text-shadow: 0px 3px 6px var(--yellow);
 }
 
+h1,
+h2 {
+  font-family: "Orbitron", sans-serif;
+}
+
 h2 {
   font-size: 2.5rem;
   font-weight: 100;
+}
+
+h3 a {
+  border-bottom: 0.3rem solid var(--yellow);
+  padding-bottom: 0.4rem;
 }
 
 h3 {
@@ -28,10 +63,10 @@ h3 {
 }
 
 h4 {
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  text-decoration: underline;
   color: var(--black);
+  font-size: 1.3rem;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -43,18 +78,12 @@ h6 {
   font-size: 1.1rem;
 }
 
-h1,
-h2 {
-  font-family: "Orbitron", sans-serif;
-}
-
-a,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-family: "Ubuntu Condensed", sans-serif;
+header {
+  align-items: center;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  grid-template-columns: 67px 1fr;
 }
 
 html {
@@ -62,32 +91,17 @@ html {
   --blue: #193549;
   --white: #fff;
   --yellow: #ffc600;
-}
-
-footer {
-  color: white;
-  display: grid;
-  left: 0;
-  padding: 0.7rem;
-  place-items: center center;
-  position: absolute;
-  right: 0;
-  margin-top: 6vw;
+  font-family: "Ubuntu Condensed", sans-serif;
 }
 
 .about {
-  margin: 8px 6vw;
-  margin-bottom: 25vw;
+  margin: 25vw 6vw;
 }
 
 .about-me {
   display: grid;
-  grid-template-columns: 1fr 350px;
   grid-gap: 5rem;
-}
-
-.about-me-text {
-  font-size: 1.2rem;
+  grid-template-columns: 1fr 350px;
 }
 
 .about-me-pic {
@@ -96,8 +110,35 @@ footer {
   justify-content: center;
 }
 
+.about-me-text {
+  font-size: 1.2rem;
+}
+
 .emoji {
-  font-family: android emoji, apple color emoji, emojione mozilla, emojisymbols, noto color emoji, segoe ui emoji, segoe ui symbol, twemoji mozilla;
+  font-family: android emoji, apple color emoji, emojione mozilla, emojisymbols,
+    noto color emoji, segoe ui emoji, segoe ui symbol, twemoji mozilla;
+}
+
+.header-nav a {
+  display: block;
+  font-size: 1.4rem;
+  padding: 5px;
+  text-align: center;
+}
+
+.header-nav a:hover {
+  border-bottom: 0.3rem solid var(--yellow);
+  text-decoration: none;
+}
+
+.header-nav ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  justify-content: end;
+  list-style: none;
+  min-height: 3rem;
 }
 
 .home {
@@ -116,37 +157,6 @@ footer {
   user-select: none;
 }
 
-header {
-  align-items: center;
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 10px;
-  grid-template-columns: 67px 1fr;
-}
-
-.header-nav ul {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 8px;
-  grid-template-columns: repeat(auto-fit, 1fr);
-  justify-content: end;
-  justify-items: center;
-  list-style: none;
-  margin: 0;
-  padding 0;
-}
-
-.header-nav a {
-  display: block;
-  font-size: 1.4rem;
-  padding: 5px;
-  text-align: center;
-}
-
-.header-nav a:hover {
-  text-decoration: underline;
-}
-
 .home-social-links {
   align-items: center;
   display: grid;
@@ -156,26 +166,31 @@ header {
   text-align: center;
 }
 
-/* !Look START */
-.projects {
-  margin: 8px 6vw;
-  margin-bottom: 6vw;
+.no-hover {
+  pointer-events: none;
 }
 
-
 .project-box {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(255, 198, 0, 0.7);
   color: var(--black);
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 150px 1fr;
-  /* height: 100%; */
-  min-height: 200px;
-  border-radius: 10px;
   margin: 0;
+  min-height: 200px;
   padding: 0;
+  position: relative;
+  top: 0;
+  transition: all 0.25s;
 }
+
+.project-box:hover {
+  box-shadow: 0 12px 14px rgba(255, 198, 0, 0.4);
+  top: -10px;
+}
+
 .project-container {
   display: grid;
   grid-gap: 20px;
@@ -187,19 +202,15 @@ header {
 }
 
 .project-label {
+  align-content: space-between;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
   height: 100%;
+  justify-content: space-between;
 }
 
 .project-links {
   padding: 0.4rem;
-}
-
-.project-links a {
-  color: var(--black);
 }
 
 .project-thumbnail {
@@ -210,60 +221,50 @@ header {
 }
 
 .project-type {
-  padding: 0.2rem;
   background: var(--yellow);
-  color: var(--white);
-  width: 3.1rem;
-  height: 1.6rem;
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path */
-  clip-path: polygon(0% 0%, 43px 0%, 100% 100%, 0% 100%);
   border-radius: 0 10px;
+  clip-path: polygon(0% 0%, 43px 0%, 100% 100%, 0% 100%);
+  color: var(--white);
+  height: 1.6rem;
+  padding: 0.2rem;
+  width: 3.1rem;
 }
-
 
 .project-year {
   background: var(--yellow);
-  width: 3.1rem;
-  text-align: right;
-  height: 1.6rem;
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path */
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 12px 100%);
+  height: 1.6rem;
   padding: 0.2rem;
-}
-/* !Look END */
-
-a {
-  color: var(--white);
-  transition: 0.5s;
+  text-align: right;
+  width: 3.1rem;
 }
 
-a:active,
-a:link,
-a:visited {
-  text-decoration: none;
+.projects {
+  margin: 10vw 6vw;
 }
 
-a:hover {
-  color: var(--yellow);
-  transition: 0.4s;
+#about-me-pic {
+  border-radius: 15%;
+  max-width: 19rem;
+  transition: all 0.25s ease-out;
+  width: 75vw;
+}
+
+#about-me-pic:hover {
+  border-radius: 50%;
+  transform: scale(1.2);
+  transition: all 0.5s ease-out;
+}
+
+#header-logo {
+  width: 4rem;
 }
 
 /* startCursor */
 .txt-rotate > .wrap {
   animation: caret 800ms steps(1) infinite;
-  border-right: 0.09rem solid var(--white);
+  border-right: 0.1rem solid var(--white);
   padding-right: 2px;
-}
-/* endCursor */
-
-#about-me-pic {
-  border-radius: 10px;
-  width: 75vw;
-  max-width: 19rem;
-}
-
-#header-logo {
-  width: 4rem;
 }
 
 @keyframes caret {
@@ -275,8 +276,8 @@ a:hover {
 
 @media (max-width: 1000px) {
   .about-me {
-    grid-template-columns: 1fr;
     grid-gap: 3rem;
+    grid-template-columns: 1fr;
   }
   .about {
     margin: 8px 0;

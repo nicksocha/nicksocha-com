@@ -16,8 +16,15 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Ubuntu+Condensed&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/595c537952.js" crossorigin="anonymous"></script>
-    <!-- todoGoogle Analytics -->
+    <!-- todoGoogle Analytics
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134217434-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
+        gtag('config', 'UA-134217434-1');
+    </script> -->
 
 </head>
 
@@ -30,24 +37,27 @@
         <nav class="header-nav">
             <ul id="nav-list">
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <!-- Home -->
+        <!-- Home Section -->
         <section class="home">
             <div class="home-hello">
                 <h1>Hello, I'm Nick!</h1>
+                <!-- Header Characteristics Carousel -->
                 <h2><span class="txt-rotate"></span></h2>
             </div>
             <div class="home-social-links">
-                <a href="http://contact.nicksocha.com" target="_blank" rel="noreferrer"><i
-                        class="fas fa-envelope fa-3x"></i></a>
+                <a class="typeform-share button" href="https://nicksocha.typeform.com/to/AxlpHy" data-mode="popup"
+                    data-auto-open=false data-hide-headers=true data-hide-footer=true data-submit-close-delay="1"
+                    target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
                 <a href="http://github.nicksocha.com" target="_blank" rel="noreferrer"><i
                         class="fab fa-github fa-3x"></i></a>
                 <a href="http://twitter.nicksocha.com" target="_blank" rel="noreferrer"><i
@@ -56,11 +66,11 @@
                         class="fab fa-linkedin-in fa-3x"></i></a>
             </div>
         </section>
-        <!-- About -->
+        <!-- About Section -->
         <section class="about">
             <div class="about-me">
                 <div class="about-me-text">
-                    <h3>About me</h3>
+                    <h3><a class="no-hover" id="about">About me <span class="emoji">🤓</span></a></h3>
                     <p>Hello <span class="emoji">👋</span> I’m Nick,</p>
                     <p>I currently live in the US - Milwaukee, WI <span class="emoji">🇺🇸</span></p>
                     <p>By day <span class="emoji">☀</span> I currently work in IT as a desktop support technician. I
@@ -82,7 +92,8 @@
                         topics
                         in the technology industry. Over the past few months I’ve been working on gearing up to start
                         doing
-                        some freelance web dev related projects over at nicksocha.dev.</p>
+                        some freelance web dev related projects over at <a href="https://nicksocha.dev" target="_blank"
+                            rel="noreferrer">nicksocha.dev</a>.</p>
                     <p>A few fun facts about me:</p>
                     <ul>
                         <li>I have no siblings, I am an only child. <span class="emoji">👶</span></li>
@@ -93,20 +104,21 @@
                     </ul>
                     <p>Thanks for visiting Nick Socha dot com. Feel free to contact me via the envelope above, or head
                         over
-                        to nicksocha.dev if you’re looking for more info on my web dev services.</p>
+                        to <a href="https://nicksocha.dev" target="_blank" rel="noreferrer">nicksocha.dev</a> if you’re
+                        looking for more info on my web dev services.</p>
                 </div>
                 <div class="about-me-pic">
-                    <img id="about-me-pic" src="images/nick-socha.png" alt="Nick Socha">
+                    <img id="about-me-pic" src="images/nick-socha.png" alt="Nick Socha Photo">
                 </div>
             </div>
         </section>
-        <!-- Projects -->
+        <!-- Projects Section -->
         <section class="projects">
             <div>
-                <h3>Projects</h3>
+                <h3><a class="no-hover" id="projects">Projects <span class="emoji">💻</span></a></h3>
             </div>
             <div class="project-container">
-                <!-- NickSocha.dev -->
+                <!-- NickSocha.dev Project -->
                 <div class="project-box">
                     <div class="project-label">
                         <div class="project-links">
@@ -126,11 +138,12 @@
                     </div>
                     <div class="project-data">
                         <h4>NickSocha.dev</h4>
-                        <p>NickSocha.dev is a WordPress website I built to send clients to. Check it out and possibly we
+                        <p><a href="https://nicksocha.dev" target="_blank" rel="noreferrer">NickSocha.dev</a> is a
+                            WordPress website I built to send clients to. Check it out and possibly we
                             can work together on your next project!</p>
                     </div>
                 </div>
-                <!-- NickSocha.com -->
+                <!-- NickSocha.com Project -->
                 <div class="project-box">
                     <div class="project-label">
                         <div class="project-links">
@@ -149,10 +162,10 @@
                     </div>
                     <div class="project-data">
                         <h4>NickSocha.com</h4>
-                        <p>Portfolio site of Nick Socha built with vanilla HTML, CSS, and JS</p>
+                        <p>Portfolio site of Nick Socha built with vanilla HTML, CSS, and JS.</p>
                     </div>
                 </div>
-                <!-- NickSocha.net -->
+                <!-- NickSocha.net Project -->
                 <div class="project-box">
                     <div class="project-label">
                         <div class="project-links">
@@ -171,12 +184,13 @@
                     </div>
                     <div class="project-data">
                         <h4>NickSocha.net</h4>
-                        <p>NickSocha.net is a simple website I threw together to practice while taking Wes Bos' CSS Grid
-                            course. It has a few links on it that I always need out in the wild but always forget the
-                            URLs.</p>
+                        <p>NickSocha.net is a simple website I threw together for practice while taking <a
+                                href="https://wesbos.com" target="_blank" rel="noreferrer">Wes Bos</a>' <a
+                                href="https://cssgrid.io" target="_blank" rel="noreferrer">CSS Grid</a> course. It has a
+                            few links on it that I always need out in the wild but always forget the URLs.</p>
                     </div>
                 </div>
-                <!-- Podcastli.com -->
+                <!-- Podcastli.com Project -->
                 <div class="project-box">
                     <div class="project-label">
                         <div class="project-links">
@@ -195,11 +209,12 @@
                     </div>
                     <div class="project-data">
                         <h4>Podcastli.com</h4>
-                        <p>Podcastli.com is a website I built that you can upload the subscriptions file you export from
-                            your favorite podcast app to get a list of your podcasts.</p>
+                        <p><a href="https://podcastli.com" target="_blank" rel="noreferrer">Podcastli.com</a> is a
+                            website I built that you can upload the subscriptions file you export from your favorite
+                            podcast app to get a list of your podcasts.</p>
                     </div>
                 </div>
-                <!-- Learning -->
+                <!-- Learning Project -->
                 <div class="project-box">
                     <div class="project-label">
                         <div class="project-links">
@@ -226,11 +241,13 @@
     </main>
     <!-- Footer -->
     <footer>
+        <!-- Nick Socha dot com Year -->
         <h6 id="year"></h6>
         <!-- Footer Social -->
         <div>
-            <a href="http://contact.nicksocha.com" target="_blank" rel="noreferrer"><i
-                    class="fas fa-envelope-square fa-2x"></i></a>
+            <a class="typeform-share button" href="https://nicksocha.typeform.com/to/AxlpHy" data-mode="popup"
+                data-auto-open=false data-hide-headers=true data-hide-footer=true data-submit-close-delay="1"
+                target="_blank"><i class="fas fa-envelope-square fa-2x"></i></a>
             <a href="http://github.nicksocha.com" target="_blank" rel="noreferrer"><i
                     class="fab fa-github-square fa-2x social"></i></a>
             <a href="http://twitter.nicksocha.com" target="_blank" rel="noreferrer"><i
@@ -239,8 +256,9 @@
                     class="fab fa-linkedin fa-2x social"></i></a>
         </div>
     </footer>
-</body>
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
 
-<script src="js/app.js"></script>
+</body>
 
 </html>
