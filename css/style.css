@@ -19,22 +19,20 @@ a:hover {
 }
 
 body {
-  background: var(--blue);
+  background-color: #193549;
+  background-image: url(/images/background-600x600.png);
   color: var(--white);
   cursor: default;
-  margin: 0 2vw;
+  margin: 0;
   padding: 0;
 }
 
 footer {
-  color: white;
+  background: var(--blue);
   display: grid;
-  left: 0;
-  margin-top: 6vw;
-  padding: 0.7rem;
+  margin: 0;
+  padding: 0;
   place-items: center center;
-  position: absolute;
-  right: 0;
 }
 
 h1 {
@@ -59,7 +57,8 @@ h3 a {
 
 h3 {
   font-size: 1.6rem;
-  padding-bottom: 30px;
+  margin: 0;
+  padding-bottom: 1.8rem;
 }
 
 h4 {
@@ -75,15 +74,18 @@ h5 {
 }
 
 h6 {
-  font-size: 1.1rem;
+  font-size: 1.8rem;
+  margin: 1rem;
 }
 
 header {
   align-items: center;
+  background: var(--blue);
   display: grid;
   grid-auto-flow: column;
   grid-gap: 10px;
   grid-template-columns: 67px 1fr;
+  padding: 0 4vw;
 }
 
 html {
@@ -95,21 +97,23 @@ html {
 }
 
 .about {
-  margin: 25vw 6vw;
+  margin: 9vw;
+  padding: 3vw;
 }
-
+.about,
+.projects {
+  background: var(--blue);
+  border-radius: 50px;
+}
 .about-me {
   display: grid;
-  grid-gap: 5rem;
   grid-template-columns: 1fr 350px;
 }
-
 .about-me-pic {
   align-items: center;
   display: grid;
   justify-content: center;
 }
-
 .about-me-text {
   font-size: 1.2rem;
 }
@@ -119,10 +123,14 @@ html {
     noto color emoji, segoe ui emoji, segoe ui symbol, twemoji mozilla;
 }
 
+.footer-social {
+  margin: 1rem 2vw;
+}
+
 .header-nav a {
   display: block;
   font-size: 1.4rem;
-  padding: 5px;
+  padding: 0.3rem;
   text-align: center;
 }
 
@@ -134,7 +142,7 @@ html {
 .header-nav ul {
   display: grid;
   grid-auto-flow: column;
-  grid-gap: 8px;
+  grid-gap: 5px;
   grid-template-columns: repeat(auto-fit, 1fr);
   justify-content: end;
   list-style: none;
@@ -142,7 +150,8 @@ html {
 }
 
 .home {
-  margin-bottom: 25vw;
+  padding: 3vw;
+  margin: 5vw 21vw 19vw;
 }
 
 .home-hello {
@@ -152,7 +161,7 @@ html {
   -webkit-user-select: none;
   display: grid;
   justify-items: center;
-  margin-bottom: 65px;
+  margin-bottom: 3vw;
   text-align: center;
   user-select: none;
 }
@@ -163,6 +172,7 @@ html {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, 78px);
   justify-content: center;
+  margin-bottom: 5vw;
   text-align: center;
 }
 
@@ -178,9 +188,7 @@ html {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 150px 1fr;
-  margin: 0;
   min-height: 200px;
-  padding: 0;
   position: relative;
   top: 0;
   transition: all 0.25s;
@@ -198,7 +206,7 @@ html {
 }
 
 .project-data {
-  padding: 0.3rem;
+  padding: 0.5vw;
 }
 
 .project-label {
@@ -240,7 +248,8 @@ html {
 }
 
 .projects {
-  margin: 10vw 6vw;
+  margin: 9vw;
+  padding: 3vw;
 }
 
 #about-me-pic {
@@ -252,8 +261,29 @@ html {
 
 #about-me-pic:hover {
   border-radius: 50%;
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 0.5s ease-out;
+}
+
+#back-to-top-btn {
+  background: var(--blue);
+  border-radius: 15px 0 0 15px;
+  border: none;
+  bottom: 25px;
+  color: var(--white);
+  cursor: pointer;
+  display: none;
+  height: 50px;
+  outline: none;
+  position: fixed;
+  right: 0;
+  transition-duration: 300ms;
+  width: 50px;
+}
+
+#back-to-top-btn:hover {
+  background: var(--white);
+  color: var(--yellow);
 }
 
 #header-logo {
@@ -275,11 +305,12 @@ html {
 /* endCursor */
 
 @media (max-width: 1000px) {
+  .about,
+  .projects {
+    margin: 2vw;
+  }
   .about-me {
     grid-gap: 3rem;
     grid-template-columns: 1fr;
-  }
-  .about {
-    margin: 8px 0;
   }
 }
