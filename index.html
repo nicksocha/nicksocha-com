@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Orbitron|Ubuntu+Condensed&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/595c537952.js" crossorigin="anonymous"></script>
-    <!-- todoGoogle Analytics
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134217434-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -24,14 +24,13 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-134217434-1');
-    </script> -->
-
+    </script>
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <a href="https://nicksocha.com/" target="_blank" rel="noreferrer">
+        <a href="https://nicksocha.com/">
             <img id="header-logo" src="images/favicon.png" alt="NS Logo" />
         </a>
         <nav class="header-nav">
@@ -45,16 +44,17 @@
             </ul>
         </nav>
     </header>
-
     <main>
         <!-- Home Section -->
         <section class="home">
+            <hr>
             <div class="home-hello">
                 <h1>Hello, I'm Nick!</h1>
                 <!-- Header Characteristics Carousel -->
                 <h2><span class="txt-rotate"></span></h2>
             </div>
-            <div class="home-social-links">
+            <hr>
+            <div class="home-social">
                 <a class="typeform-share button" href="https://nicksocha.typeform.com/to/AxlpHy" data-mode="popup"
                     data-auto-open=false data-hide-headers=true data-hide-footer=true data-submit-close-delay="1"
                     target="_blank"><i class="fas fa-envelope fa-3x"></i></a>
@@ -65,12 +65,14 @@
                 <a href="http://linkedin.nicksocha.com" target="_blank" rel="noreferrer"><i
                         class="fab fa-linkedin-in fa-3x"></i></a>
             </div>
+            <hr>
         </section>
         <!-- About Section -->
+        <hr class="transparent" id="about">
         <section class="about">
             <div class="about-me">
-                <div class="about-me-text">
-                    <h3><a class="no-hover" id="about">About me <span class="emoji">🤓</span></a></h3>
+                <div>
+                    <h3><a class="no-hover">About me <span class="emoji">🤓</span></a></h3>
                     <p>Hello <span class="emoji">👋</span> I’m Nick,</p>
                     <p>I currently live in the US - Milwaukee, WI <span class="emoji">🇺🇸</span></p>
                     <p>By day <span class="emoji">☀</span> I currently work in IT as a desktop support technician. I
@@ -80,7 +82,7 @@
                     <p>By night <span class="emoji">🌙</span> I am a self taught front-end web developer who is
                         working on transitioning to
                         freelancing
-                        fulltime writing code and building WordPress websites.</p>
+                        full time writing code and building WordPress websites.</p>
                     <p>In the past, I have worked Warehouse jobs, but grew tired of all the sweat for little pay.
                         Roughly
                         five years ago I started working in IT and love it. I love anything to do with technology. I
@@ -113,11 +115,36 @@
             </div>
         </section>
         <!-- Projects Section -->
+        <hr class="transparent" id="projects">
         <section class="projects">
             <div>
-                <h3><a class="no-hover" id="projects">Projects <span class="emoji">💻</span></a></h3>
+                <h3><a class="no-hover">Projects <span class="emoji">💻</span></a></h3>
             </div>
             <div class="project-container">
+                <!-- Socha.me Project -->
+                <div class="project-box">
+                    <div class="project-label">
+                        <div class="project-links">
+                            <a href="https://github.com/nicksocha/socha-me" target="_blank" rel="noreferrer"><i
+                                    class="fab fa-github fa-2x"></i></a>
+                            <a href="https://socha.me" target="_blank" rel="noreferrer"><i
+                                    class="fas fa-globe-americas fa-2x"></i></a>
+                        </div>
+                        <div class="project-year">
+                            <h5>2019</h5>
+                        </div>
+                        <img class="project-thumbnail" src="images/socha-me-laptop.png"
+                            alt="Socha.me in browser on a laptop" />
+                        <div class="project-type">
+                            <h5>Web</h5>
+                        </div>
+                    </div>
+                    <div class="project-data">
+                        <h4>Socha.me</h4>
+                        <p><a href="https://socha.me" target="_blank" rel="noreferrer">Socha.me</a> is a website I built
+                            in vanilla HTML, CSS, and JS as a resume site to showcase my IT related experience.</p>
+                    </div>
+                </div>
                 <!-- NickSocha.dev Project -->
                 <div class="project-box">
                     <div class="project-label">
@@ -256,9 +283,9 @@
             <a href="http://linkedin.nicksocha.com" target="_blank" rel="noreferrer"><i
                     class="fab fa-linkedin fa-3x footer-social"></i></a>
         </div>
-        <!-- Back to top button -->
-        <button id="back-to-top-btn"><i class="fas fa-angle-double-up fa-2x"></i></button>
     </footer>
+    <!-- Back to top button -->
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up fa-2x"></i></button>
     <!-- JavaScript -->
     <script src="js/app.js"></script>
 
