@@ -19,7 +19,7 @@ a:hover {
 }
 
 body {
-  /* background-color: #193549; */
+  background-color: #193549;
   background-image: url(/images/background-600x600.png);
   color: var(--white);
   cursor: default;
