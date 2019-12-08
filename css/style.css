@@ -349,6 +349,15 @@ ul {
 }
 /* endCursor */
 
+@media screen and (max-width: 600px) {
+  .display-none {
+    display: none;
+  }
+  .home-social {
+    grid-template-columns: repeat(2, 78px);
+  }
+}
+
 @media screen and (max-width: 900px) {
   h1 {
     font-size: calc(1.5rem + 5vw);
