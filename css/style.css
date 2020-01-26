@@ -338,8 +338,8 @@ ul {
 /* startCursor */
 .txt-rotate > .wrap {
   animation: caret 800ms steps(1) infinite;
-  border-right: 0.1rem solid var(--white);
-  padding-right: 2px;
+  border-right: 0.1rem solid var(--yellow);
+  padding-right: 5px;
 }
 
 @keyframes caret {
