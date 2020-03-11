@@ -123,7 +123,7 @@ function smoothScrollBackToTop() {
   const targetPosition = 0;
   const startPosition = window.pageYOffset;
   const distance = targetPosition - startPosition;
-  const duration = 750;
+  const duration = 50;
   let start = null;
 
   window.requestAnimationFrame(step);
