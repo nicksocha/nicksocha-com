@@ -67,17 +67,17 @@ function shuffle(arra1) {
   return arra1;
 }
 const myArray = [
-  'Always Learning',
   'Andriod User',
   'Cheese Curd Connoisseur',
   'Divi in my DNA',
   'Entrepreneur',
+  'Lifelong Learner',
   'Lutheran for life',
   'Partial Germaphobe',
   'Remote Worker',
   'Technology Enthusiast',
   'US Based',
-  'Web Developer',
+  'Web Developer'
 ];
 shuffle(myArray);
 // endHeader Characteristics Carousel
