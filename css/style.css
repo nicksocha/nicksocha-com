@@ -350,12 +350,16 @@ ul {
 }
 /* endCursor */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .display-none {
     display: none;
   }
   .home-social {
     grid-template-columns: repeat(2, 78px);
+    padding: 1rem 0;
+  }
+  .home-social > a:last-child {
+    grid-column: span 2;
   }
 }
 
