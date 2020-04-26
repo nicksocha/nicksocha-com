@@ -10,7 +10,7 @@ The target audience is fellow developers 💻 and anyone looking for web develop
 - Developer tools:
   - [ESLint](https://eslint.org/)
   - [Prettier](https://github.com/prettier/prettier)
-- Icons from 🗚 [font-awesome](https://fontawesome.com/) 🗛
+- Icons from 👍 [font-awesome](https://fontawesome.com/) 👍
 - Responsive design 📱
 - Social sharing ([GitHub](http://github.nicksocha.com/), [Twitter](http://twitter.nicksocha.com/), and [LinkedIn](http://linkedin.nicksocha.com/)).
 - [Google Analytics](https://en.wikipedia.org/wiki/Google_Analytics)
