@@ -69,15 +69,15 @@ function shuffle(arra1) {
 const myArray = [
   'Andriod User',
   'Cheese Curd Connoisseur',
-  'Divi in my DNA',
   'Entrepreneur',
   'Lifelong Learner',
   'Lutheran for life',
   'Partial Germaphobe',
   'Remote Worker',
+  'Real Estate Investor',
+  'Sim Racer',
   'Technology Enthusiast',
   'US Based',
-  'Web Developer'
 ];
 shuffle(myArray);
 // endHeader Characteristics Carousel
