@@ -69,7 +69,6 @@ function shuffle(arra1) {
 const myArray = [
   'Andriod User',
   'Cheese Curd Connoisseur',
-  'Entrepreneur',
   'Lifelong Learner',
   'Lutheran for life',
   'Partial Germaphobe',
